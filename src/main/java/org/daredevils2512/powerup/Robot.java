@@ -39,7 +39,6 @@ public class Robot extends TimedRobot {
 	public void robotInit() {
 		// chooser.addObject("My Auto", new MyAutoCommand());
 		SmartDashboard.putData("Auto mode", m_chooser);
-		RobotMap.Init();		
 	}
 
 	/**
@@ -120,9 +119,7 @@ public class Robot extends TimedRobot {
 		SmartDashboard.putNumber("Elevator Encoder", m_elevator.getLiftHeight());
 		SmartDashboard.putBoolean("Intake Limit", m_intake.getLimitSwitchValue());
 		SmartDashboard.putBoolean("Elevator Limit", m_elevator.getLimitSwitchValue());
-		SmartDashboard.putNumber("NavX Yaw", RobotMap.navX.getYaw());
-		SmartDashboard.putNumber("NavX Roll", RobotMap.navX.getRoll());
-		SmartDashboard.putNumber("NavX Pitch", RobotMap.navX.getPitch());
+		
 	}
 
 	/**

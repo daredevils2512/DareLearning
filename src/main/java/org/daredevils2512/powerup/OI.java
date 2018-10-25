@@ -57,10 +57,10 @@ public class OI {
 	public static JoystickButton DRC_xButton = new JoystickButton(driver, 3);
 	public static JoystickButton DRC_yButton = new JoystickButton(driver, 4);
 	public static JoystickButton DRC_leftBumper = new JoystickButton(driver, 5);
-	public static JoystickButton DRC_rightBumper = new JoystickButton(driver, 6);
+	public static JoystickButton DRC_rightBumper = new JoystickButton(driver, 6); 
 	public static TriggerButton DRC_leftTrigger = new TriggerButton(driver, 2);
 	public static TriggerButton DRC_rightTrigger = new TriggerButton(driver, 3);
-	
+
 	public static JoystickButton CDR_trigger = new JoystickButton(coDriver, 1);
 	public static JoystickButton CDR_sideButton = new JoystickButton(coDriver, 2);
 	public static JoystickButton CDR_stickBottomLeft = new JoystickButton(coDriver, 3);

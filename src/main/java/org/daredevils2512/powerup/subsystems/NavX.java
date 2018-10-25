@@ -5,15 +5,19 @@ import edu.wpi.first.wpilibj.PIDSource;
 import edu.wpi.first.wpilibj.PIDSourceType;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
+import edu.wpi.first.wpilibj.*;
+
 /**
  *
  */
 public class NavX extends Subsystem implements PIDSource {
+	
 
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 	private PIDSourceType sourceType = PIDSourceType.kDisplacement;
-	public AHRS navx;
+	private static AHRS navX = new AHRS(SPI.Port.kMXP);
+	
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
